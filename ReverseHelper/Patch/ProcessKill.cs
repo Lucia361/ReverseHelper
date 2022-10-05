@@ -9,7 +9,7 @@ namespace ReverseHelper.Patch
 {
     internal class ProcessKill
     {
-        [HarmonyPatch(typeof(System.Diagnostics.Process), nameof(System.Diagnostics.Process.Kill), MethodType.Normal)]
+        //[HarmonyPatch(typeof(System.Diagnostics.Process), nameof(System.Diagnostics.Process.Kill), MethodType.Normal)] //it has some bugs, I'll try to fix :)
         class ProcessKillPatch
         {
             static bool Prefix()
